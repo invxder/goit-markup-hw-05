@@ -22,12 +22,12 @@
         <a href="./index.html" class="logo-web link">WEB<span class="head-studio">STUDIO</span>
         </a>
         <ul class="site-nav list">
-          <li class="item"><a href="./index.html" class="anchors link">Studio</a></li>
+          <li class="item"><a href="./index.html" class="anchors one link">Studio</a></li>
           <li class="item">
-            <a href="./portfolio.html" class="anchors link">Portfolio</a>
+            <a href="./portfolio.html" class="anchors two link">Portfolio</a>
           </li>
           <li class="item">
-            <a href="" class="anchors link">Contacts</a>
+            <a href="" class="anchors three link">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -48,9 +48,17 @@
     <section class="hero bg-hero">
       <div class="container">
         <h1 class="hero-title">Effective Solutions<br>for Your Business</h1>
-        <button type="button" class="btn btn-hero">Order Service</button>
+        <button type="button" class="btn btn-hero" data-modal-open>Order Service</button>
       </div>
     </section>
+
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn" data-modal-close>
+        </button>
+      </div>
+    </div>
 
     <!-- Studio / Description of studio -->
     <section class="section main-desc">
@@ -441,6 +449,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
